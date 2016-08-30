@@ -21,7 +21,9 @@
        var enSoftMenSec = "<div>";enSoftMenSec += "<ul id='il'>";enSoftMenSec += "<font size='6'>";enSoftMenSec += "<li onclick='enSoftJS()'><font color='#FFFFFF'>javascript</font></li>";enSoftMenSec += "</font>";enSoftMenSec += "</ul>";enSoftMenSec += "</div>";
        var enSoftJavascript  = "<div>";enSoftJavascript += "<div id='jsMenu'></div>";enSoftJavascript += "</div>";
         var enJSMenSec = "<div>";enJSMenSec += "<ul id='il'>";enJSMenSec += "<font size='12'>";enJSMenSec += "<li onclick='enJSRM()'><font color='#FFFFFF'>RenderMe</font></li>";enJSMenSec += "</font>";enJSMenSec += "</ul>";enJSMenSec += "</div>";
-         var enJSRenderMe = "<div>";enJSRenderMe += "<div align='center'>";enJSRenderMe += "<font size='12' color='#FFFFFF'>RenderMe 1.0</font>";enJSRenderMe += "</div>";enJSRenderMe += "</div>";
+         var enJSRenderMe = "<div>";enJSRenderMe += "<div align='center'>";enJSRenderMe += "<font id='renderMe' size='12' color='#FFFFFF'>RenderMe 1.0</font>";enJSRenderMe += "</div>";enJSRenderMe += "<div id='rmMenu'></div>";enJSRenderMe += "<div id='rmDetail'></div>";enJSRenderMe += "</div>";
+          var enRMMenSec = "<div>";enRMMenSec += "</div>";
+          var enRMDetail1 = "<div>";enRMDetail1 += "</div>";
     document.getElementById("divBody").innerHTML = enBody;document.getElementById("menuSection").innerHTML = enMenSec;
     function enWAW(){ document.getElementById("conBody").innerHTML=enWhoAreWe; }
     function enPro(){ document.getElementById("conBody").innerHTML=enProducts;document.getElementById("proMenu").innerHTML=enProMenSec1; }
