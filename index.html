@@ -13,14 +13,14 @@
    <div id="divBody"></div>
    <script type="text/javascript">
     var enBody = "<div>";enBody += "<div align='center' class='head'>";enBody += "<ul id='il' name='title' onclick='home()'>";enBody += "<font size='12'>";enBody += "<li><font color='#00FFFF'>Re</font></li>";enBody += "<li><font color='#FFAA00'>Make</font></li>";enBody += "<li><font color='#00FF00'>Now</font></li>";enBody += "</font>";enBody += "</ul>";enBody += "<div id='menuSection'></div>";enBody += "<div>";enBody += "</div>";enBody += "</div>";enBody += "</div>";enBody += "<div id='conBody'></div>";
-     var enMenSec = "<div>";enMenSec += "<ul id='il'>";enMenSec += "<font size='6'>";enMenSec += "<li onclick='enWAW()'><font color='#FFAA00'>Who Are We</font></li>";enMenSec += "<li><font color='#FFFFFF'>||</font></li>";enMenSec += "<li onclick='enPro()'><font color='#FFAA00'>Products</font></li>";enMenSec += "</font>";enMenSec += "</ul>";enMenSec += "</div>";
+     var enMenSec = "<div>";enMenSec += "<ul id='il'>";enMenSec += "<font size='6'>";enMenSec += "<li onclick='enWAW()'><font color='#FFAA00'>Who Are We</font></li>";enMenSec += "<li><font color='#00FF00'>||</font></li>";enMenSec += "<li onclick='enPro()'><font color='#FFAA00'>Products</font></li>";enMenSec += "</font>";enMenSec += "</ul>";enMenSec += "</div>";
      var enWhoAreWe = "<div>";enWhoAreWe += "<div align='center'>";enWhoAreWe += "<font size='12' color='#FFFFFF'>Who Are We?</font>";enWhoAreWe += "</div>";enWhoAreWe += "At ReMakeNow we do our best to press the bounderies.";enWhoAreWe += " We want to take the world to the next level.";enWhoAreWe += " Please support this company in it's future developments.";enWhoAreWe += " Our current project is RenderMe.";enWhoAreWe += " Brief description will be in Products->software->JavaScript.";enWhoAreWe += "</div>";
      var enProducts = "<div>";enProducts += "<div id='proMenu'></div>";enProducts += "</div>";
-      var enProMenSec = "<div>";enProMenSec += "<ul id='il'>";enProMenSec += "<font size='6'>";enProMenSec += "<li onclick='enProSoft()'><font color='#FFFFFF'>Software</font></li>";enProMenSec += "</font>";enProMenSec += "</ul>";enProMenSec += "</div>";
+      var enProMenSec1 = "<div>";enProMenSec += "<ul id='il'>";enProMenSec1 += "<font size='6'>";enProMenSec1 += "<li onclick='enProSoft()'><font color='#FFFFFF'>Software</font></li>";enProMenSec1 += "</font>";enProMenSec1 += "</ul>";enProMenSec1 += "</div>";
       var enProSoftware = "<div>";enProSoftware += "</div>";
     document.getElementById("divBody").innerHTML = enBody;document.getElementById("menuSection").innerHTML = enMenSec;
     function enWAW(){ document.getElementById("conBody").innerHTML=enWhoAreWe; }
-    function enPro(){ document.getElementById("conBody").innerHTML=enProducts;document.getElementById("proMenu").innerHTML=enProMenSec; }
+    function enPro(){ document.getElementById("conBody").innerHTML=enProducts;document.getElementById("proMenu").innerHTML=enProMenSec1; }
      function enProSoft(){ document.getElementById("conBody").innerHTML=enProSoftware; }
     function home(){
      window.location = "http://www.remakenow.us/";
