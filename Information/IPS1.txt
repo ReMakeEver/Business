@@ -1,0 +1,20 @@
+IPS1:
+ ips1 is a ip address that consists of twenty octets.
+ Example:
+  0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0
+ Each placement value can go from 0 to 254.
+ 
+Binary Encoding B9:
+ Chart:
+  256.128.64.32.16.8.4.2.1
+ If number is 256.128.64.32.16.8.4.2.1 is would look like in binary as
+ 100000000
+ 010000000
+ 001000000
+ 000100000
+ 000010000
+ 000001000
+ 000000100
+ 000000010
+ 000000001
+ 
