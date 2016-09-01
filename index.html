@@ -24,13 +24,16 @@
         var enJSMenSec = "<div align='center'>";enJSMenSec += "<ul id='bl'>";enJSMenSec += "<font size='12'>";enJSMenSec += "<li onclick='enJSRM()'><font color='#FFFFFF'>RenderMe</font></li>";enJSMenSec += "<li onclick='enJSSI()'><font color='#FFFFFF'>SecureIt</font></li>";enJSMenSec += "</font>";enJSMenSec += "</ul>";enJSMenSec += "</div>";
         var enJSRenderMe = "<div>";enJSRenderMe += "<div align='center'>";enJSRenderMe += "<font id='renderMe' size='12' color='#FFFFFF'>RenderMe 1.0</font>";enJSRenderMe += "</div>";enJSRenderMe += "<div id='rmMenu'></div>";enJSRenderMe += "<div id='rmDetail'></div>";enJSRenderMe += "</div>";
          var enRMMenSec = "<div>";enRMMenSec += "</div>";
-         var enRMDetail1 = "<div>";enRMDetail += "<div align='center'>";enRMDetail += "<font color='#FFFFFF'>No builds yet.</font>";enRMDetail += "</div>";enRMDetail1 += "</div>";
+         var enRMDetail1 = "<div>";enRMDetail1 += "<div align='center'>";enRMDetail1 += "<font color='#FFFFFF'>No builds yet.</font>";enRMDetail1 += "</div>";enRMDetail1 += "</div>";
+        var enJSSecureIt = "<div>";enJSSecureIt += "<div align='center'>";enJSSecureIt += "<font id='secureIt' size='12' color='#FFFFFF'>SecureIt 1.0</font>";enJSSecureIT += "</div>";enJSSecureIt += "<div id='siMenu'></div>";enJSSecureIt += "<div id='siDetail'></div>";enJSSecureIt += "</div>";
+         var enSIMenSec = "<div>";enSIMenSec += "</div>";
+         var enSIDetail1 = "<div>";enSIDetail1 += "<div align='center'>";enSIDetail1 += "<font color='#FFFFFF'>No builds yet.</font>";enSIDetail1 += "<div>";enSIDetail1 += "</div>";
     document.getElementById("divBody").innerHTML = enBody;document.getElementById("menuSection").innerHTML = enMenSec;
     function enWAW(){ document.getElementById("conBody").innerHTML=enWhoAreWe; }
     function enPro(){ document.getElementById("conBody").innerHTML=enProducts;document.getElementById("proMenu").innerHTML=enProMenSec1; }
      function enProSoft(){ document.getElementById("conBody").innerHTML=enProSoftware;document.getElementById("softMenu").innerHTML=enSoftMenSec; }
       function enSoftJS(){ document.getElementById("conBody").innerHTML=enSoftJavascript;document.getElementById("jsMenu").innerHTML=enJSMenSec; }
-       function enJSRM(){ document.getElementById("conBody").innerHTML=enJSRenderMe; }
+       function enJSRM(){ document.getElementById("conBody").innerHTML=enJSRenderMe;document.getElementById("rmDetail").innerHTML=enRMDetail1; }
     function home(){
      window.location = "http://www.remakenow.us/";
     }
