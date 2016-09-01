@@ -45,6 +45,7 @@ function lenThree(){
  var element = document.getElementByTagName("Password");
  var l1 = element.substring(0);var l2 = element.substring(1);var l3 = element.substring(2);
  if(l1=="a"){log=a;}if(l1=="b"){log=b;}if(l1=="c"){log=c;}if(l1=="d"){log=d;}if(l1=="e"){log=e;}if(l1=="f"){log=f;}if(l1=="g"){log=g;}if(l1=="h"){log=h;}if(l1=="i"){log=i;}if(l1=="j"){log=j;}if(l1=="k"){log=k;}if(l1=="l"){log=l;}if(l1=="m"){log=m;}if(l1=="n"){log=n;}if(l1=="o"){log=o;}if(l1=="p"){log=p;}if(l1=="q"){log=q;}if(l1=="r"){log=r;}if(l1=="s"){log=s;}if(l1=="t"){log=t;}if(l1=="u"){log=u;}if(l1=="v"){log=v;}if(l1=="w"){log=w;}if(l1=="x"){log=x;}if(l1=="y"){log=y;}if(l1=="z"){log=z;}
+ if(l1=="A"){log=A;}if(l1=="B"){log=B;}if(l1=="C"){log=C;}if(l1=="D"){log=D;}if(l1=="E"){log=E;}if(l1=="F"){log=F;}if(l1=="G"){log=G;}if(l1=="H"){log=H;}if(l1=="I"){log=I;}if(l1=="J"){log=J;}if(l1=="K"){log=K;}if(l1=="L"){log=L;}if(l1=="M"){log=M;}if(l1=="N"){log=N;}if(l1=="O"){log=O;}if(l1=="P"){log=P;}if(l1=="Q"){log=Q;}if(l1=="R"){log=R;}if(l1=="S"){log=S;}if(l1=="T"){log=T;}if(l1=="U"){log=U;} 
 }
 function lenFour(){
 }
