@@ -6,6 +6,7 @@
     body{ background:#00FFFF;font-family:Helvetica; }
     div.head{ background:#FFFFFF; }
     ul#il li{ display:inline;list-style-type:none; }
+    ul#bl li{ display:block;list-style-type:none; }
    </style>
   </head>
   <body>
@@ -14,16 +15,16 @@
    <script type="text/javascript">
     var enBody = "<div>";enBody += "<div align='center' class='head'>";enBody += "<ul id='il' name='title' onclick='home()'>";enBody += "<font size='12'>";enBody += "<li><font color='#00FFFF'>Re</font></li>";enBody += "<li><font color='#FFAA00'>Make</font></li>";enBody += "<li><font color='#00FF00'>Now</font></li>";enBody += "</font>";enBody += "</ul>";enBody += "<div id='menuSection'></div>";enBody += "<div>";enBody += "</div>";enBody += "</div>";enBody += "</div>";enBody += "<div id='conBody'></div>";
      var enMenSec = "<div>";enMenSec += "<ul id='il'>";enMenSec += "<font size='6'>";enMenSec += "<li onclick='enWAW()'><font color='#FFAA00'>Who Are We</font></li>";enMenSec += "<li><font color='#00FF00'>||</font></li>";enMenSec += "<li onclick='enPro()'><font color='#FFAA00'>Products</font></li>";enMenSec += "</font>";enMenSec += "</ul>";enMenSec += "</div>";
-     var enWhoAreWe = "<div>";enWhoAreWe += "<div align='center'>";enWhoAreWe += "<font size='12' color='#FFFFFF'>Who Are We?</font>";enWhoAreWe += "</div>";enWhoAreWe += "At ReMakeNow we do our best to press the bounderies.";enWhoAreWe += " We want to take the world to the next level.";enWhoAreWe += " Please support this company in it's future developments.";enWhoAreWe += " Our current project is RenderMe.";enWhoAreWe += " Brief description will be in Products->software->javascript->RenderMe";enWhoAreWe += "</div>";
+     var enWhoAreWe = "<div>";enWhoAreWe += "<div align='center'>";enWhoAreWe += "<font size='12' color='#FFFFFF'>Who Are We?</font>";enWhoAreWe += "</div>";enWhoAreWe += "At ReMakeNow we do our best to press the bounderies.";enWhoAreWe += " We want to take the world to the next level.";enWhoAreWe += " Please support this company in it's future developments.";enWhoAreWe += " Our current project is RenderMe.";enWhoAreWe += " Brief description will be in Products->software->javascript->SecureIt";enWhoAreWe += "</div>";
      var enProducts = "<div>";enProducts += "<div id='proMenu'></div>";enProducts += "</div>";
       var enProMenSec1 = "<div>";enProMenSec1 += "<ul id='il'>";enProMenSec1 += "<font size='6'>";enProMenSec1 += "<li onclick='enProSoft()'><font color='#FFFFFF'>software</font></li>";enProMenSec1 += "</font>";enProMenSec1 += "</ul>";enProMenSec1 += "</div>";
       var enProSoftware = "<div>";enProSoftware += "<div id='softMenu'></div>";enProSoftware += "</div>";
        var enSoftMenSec = "<div>";enSoftMenSec += "<ul id='il'>";enSoftMenSec += "<font size='6'>";enSoftMenSec += "<li onclick='enSoftJS()'><font color='#FFFFFF'>javascript</font></li>";enSoftMenSec += "</font>";enSoftMenSec += "</ul>";enSoftMenSec += "</div>";
        var enSoftJavascript  = "<div>";enSoftJavascript += "<div id='jsMenu'></div>";enSoftJavascript += "</div>";
-        var enJSMenSec = "<div>";enJSMenSec += "<ul id='il'>";enJSMenSec += "<font size='12'>";enJSMenSec += "<li onclick='enJSRM()'><font color='#FFFFFF'>RenderMe</font></li>";enJSMenSec += "</font>";enJSMenSec += "</ul>";enJSMenSec += "</div>";
+        var enJSMenSec = "<div align='center'>";enJSMenSec += "<ul id='bl'>";enJSMenSec += "<font size='12'>";enJSMenSec += "<li onclick='enJSRM()'><font color='#FFFFFF'>RenderMe</font></li>";enJSMenSec += "<li onclick='enJSSI()'><font color='#FFFFFF'>SecureIt</font></li>";enJSMenSec += "</font>";enJSMenSec += "</ul>";enJSMenSec += "</div>";
         var enJSRenderMe = "<div>";enJSRenderMe += "<div align='center'>";enJSRenderMe += "<font id='renderMe' size='12' color='#FFFFFF'>RenderMe 1.0</font>";enJSRenderMe += "</div>";enJSRenderMe += "<div id='rmMenu'></div>";enJSRenderMe += "<div id='rmDetail'></div>";enJSRenderMe += "</div>";
          var enRMMenSec = "<div>";enRMMenSec += "</div>";
-         var enRMDetail1 = "<div>";enRMDetail1 += "</div>";
+         var enRMDetail1 = "<div>";enRMDetail += "<div align='center'>";enRMDetail += "<font color='#FFFFFF'>No builds yet.</font>";enRMDetail += "</div>";enRMDetail1 += "</div>";
     document.getElementById("divBody").innerHTML = enBody;document.getElementById("menuSection").innerHTML = enMenSec;
     function enWAW(){ document.getElementById("conBody").innerHTML=enWhoAreWe; }
     function enPro(){ document.getElementById("conBody").innerHTML=enProducts;document.getElementById("proMenu").innerHTML=enProMenSec1; }
