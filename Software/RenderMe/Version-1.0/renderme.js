@@ -1,8 +1,12 @@
-function createNew(object){
- this.varObj = object;
+function CreateObject(object){
+ this.varObject = object;
 }
-Object.prototype = {
- varObj: null,
- square: function(){
+CreateObject.prototype= {
+ varObject: null,
+ squareShape: function(){
  },
+ circleShape: function(){
+ }
+ triangleShape: function(){
+ }
 }
