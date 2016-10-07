@@ -1,15 +1,17 @@
-<url>
- <loc>http://www.remakenow.us</loc>
-</url>
-<url>
- <loc>http://software.remakenow.us/</loc>
-</url>
-<url>
- <loc>http://school.remakenow.us/<loc>
-</url>
-<url>
- <loc>http://stores.remakenow.ud/<loc>
-</url>
-<url>
- <loc>http://money.remakenow.us/</loc>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <url>
+  <loc>http://www.remakenow.us</loc>
+ </url>
+ <url>
+  <loc>http://software.remakenow.us/</loc>
+ </url>
+ <url>
+  <loc>http://school.remakenow.us/<loc>
+ </url>
+ <url>
+  <loc>http://stores.remakenow.ud/<loc>
+ </url>
+ <url>
+  <loc>http://money.remakenow.us/</loc>
+ </url>
+</urlset>
