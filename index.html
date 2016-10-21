@@ -37,13 +37,13 @@
     <div itemscope itemtype="http://renakenow.us/name" itemref="menu">
       <ul id="il" itemprop="menu section">
        <p>
-        <li><font color="#FF0000" itemprop="section" name="itemOne">Money</font></li>
+        <li><font color="#FF0000" itemprop="section" id="itemOne">Money</font></li>
        </p>
      </ul>
     </div>
    </div>
    <script type="text/javascript">
-    document.getElementByName("itemOne").addEventListener("click", gotoFin);
+    document.getElementById("itemOne").addEventListener("click", gotoFin);
     function gotoFin(){
      window.location = "http://money.remakenow.us/";
     }
