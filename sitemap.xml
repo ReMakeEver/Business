@@ -4,6 +4,12 @@
   <url>
    <loc>http://www.remakenow.us/index.html</loc>
    <news:news>
+    <news:publication>
+     <news:title>ReMakeNow Current Projects</news:title>
+     <news:language>en</news:language>
+    </news:publication>
+    <news:genres>Blogs, Updates, Business</news:genres>
+    <news:keywords>ReMakeNow, Projects, Current, smart, phone, android</news:keywords>
    </news:news>
   </url>
  </urlset>
