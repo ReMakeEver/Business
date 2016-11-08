@@ -2,5 +2,13 @@
  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
    <loc>http://www.remakenow.us/index.html</loc>
+   <news:news>
+    <news:publication>
+     <news:name>ReMakeNow Current Projects</news:name>
+     <news:language>en</news:language>
+    </news:publication>
+    <news:genres>Blog, Updates</news:genres>
+    <news:keywords>ReMakeNow, updates, from, by, new, Android, applications, Software, Finance</news:keywords>
+   </news:news>
   </url>
  </urlset>
