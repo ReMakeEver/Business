@@ -3,15 +3,5 @@
          xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
    <loc>http://www.remakenow.us/index.html</loc>
-   <news:news>
-    <news:publication>
-     <news:name>ReMakeNow Current Projects</news:name>
-     <news:language>en</news:language>
-    </news:publication>
-    <news:genres>blog</news:genres>
-    <news:title>ReMakeNow Current Projects</news:title>
-    <news:publication_date>2016-11-08</news:publication_date>
-    <news:keywords>ReMakeNow, Projects, Current, smart, phone, android</news:keywords>
-   </news:news>
   </url>
  </urlset>
