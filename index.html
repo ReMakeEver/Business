@@ -41,6 +41,7 @@
         <li><font color="#FF0000" itemtype="http://remakenow.us/section" itemprop="section" id="itemOne">Finance</font></li>
         <li><font color="#FF0000" itemtype="http://remakenow.us/section" itemprop="section" id="itemTwo">Software</font></li>
         <li><font color="#FF0000" itemtype="http://remakenow.us/section" itemprop="section" id="itemThree">Support</font></li>
+        <li><font color="#FF0000" itemtype="http://remakenow.us/section" itemprop="section" id="itemFour">Events</font></li>
        </p>
      </ul>
     </div>
@@ -65,12 +66,25 @@
     supportBody += "<h1>Ethereum</h1><br />";supportBody += "<p>Send coins to Ethereum Address 0x5c1b1d9c1b52eb117e3432d623a4c7793f3006a1</p><br />";
     supportBody += "</div>";
     supportBody += "</div>";
+    var eventBody = "<div>";
+    eventBody += "<div align='center'>";
+    eventBody += "<ul id='il'>";
+    eventBody += "<p>";
+    eventBody += "<li><font color='#00FFFF' id='eItem1'>Stereotypes</font></li>";
+    eventBody += "</p>";
+    eventBody += "</ul>";
+    eventBody += "</div>";
+    eventBody += "</div>";
     document.getElementById("itemOne").addEventListener("click", gotoFin);
     document.getElementById("itemTwo").addEventListener("click", gotoSoft);
     document.getElementById("itemThree").addEventListener("click", showSupport);
-    function gotoFin(){window.location = "http://money.remakenow.us/";}
-    function gotoSoft(){window.loaction = "http://software.remakenow.us/";}
+    document.getElementById("itemFour").addEventListener("click", showEvent);
+     document.getElementById("eItem1").addEventListener("click", stereoEvent);
+    function gotoFin(){ window.location = "http://money.remakenow.us/"; }
+    function gotoSoft(){ window.location = "http://software.remakenow.us/"; }
     function showSupport(){ document.getElementById("theBody").innerHTML = supportBody; }
+    function showEvent(){ document.getElementById("theBody").innerHTML = eventBody; }
+     function stereoEvent(){ window.location = "http://www.remakenow.us/madevent"; }
    </script>
   </body>
  </html>
