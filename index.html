@@ -29,9 +29,9 @@
     <div itemscope itemtype="http://remakenow.us/name" itemprop="company">
      <ul id="il">
       <font size="12">
-       <li><font color="#FFCC99" itemtype="http://remakenow.us/name" itemprop="title">Re</font></li>
-       <li><font color="#FFCC66" itemtype="http://remakenow.us/name" itemprop="title">Make</font></li>
-       <li><font color="#FF9966" itemtype="http://remakenow.us/name" itemprop="title">Now</font></li>
+       <li onclick="gotoFin()"><font color="#FFCC99" itemtype="http://remakenow.us/name" itemprop="title">Re</font></li>
+       <li onclick="gotoSoft()"><font color="#FFCC66" itemtype="http://remakenow.us/name" itemprop="title">Make</font></li>
+       <li onclick="gotoSuppport()"><font color="#FF9966" itemtype="http://remakenow.us/name" itemprop="title">Now</font></li>
       </font>
      </ul>
     </div>
@@ -60,16 +60,11 @@
     eventBody += "<div align='center'>";
     eventBody += "<ul id='il'>";
     eventBody += "<p>";
-    eventBody += "<li><font color='#00FFFF' id='eItem1'>Stereotypes</font></li>";
+    eventBody += "<li onclick='stereoEvent()'><font color='#00FFFF' id='eItem1'>Stereotypes</font></li>";
     eventBody += "</p>";
     eventBody += "</ul>";
     eventBody += "</div>";
     eventBody += "</div>";
-    document.getElementById("itemOne").addEventListener("click", gotoFin);
-    document.getElementById("itemTwo").addEventListener("click", gotoSoft);
-    document.getElementById("itemThree").addEventListener("click", showSupport);
-    document.getElementById("itemFour").addEventListener("click", showEvent);
-     document.getElementById("eItem1").addEventListener("click", stereoEvent);
     function gotoFin(){ window.location = "http://money.remakenow.us/"; }
     function gotoSoft(){ window.location = "http://software.remakenow.us/"; }
     function showSupport(){ document.getElementById("theBody").innerHTML = supportBody; }
