@@ -25,5 +25,37 @@
 <meta name="google-site-verification" content="UbCVwyTJXxNUris4DfPRj5ojYEbN1Ih_6zVvFSxt9LQ" />   <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-database.js"></script><meta name="google-site-verification" content="UbCVwyTJXxNUris4DfPRj5ojYEbN1Ih_6zVvFSxt9LQ" />
   </head>
   <body>
+   <div itemscope itemtype="http://remakenow.us/head" itemprop="head">
+    <div align="center">
+     <ul id="il" itemscope itemtype="http://remakenow.us/logo" itemprop="title">
+      <font size="12">
+       <a href="javascript:reload();">
+        <li itemscope itemtype="http://remakenow.us/title" itemprop="word"><font color="#FFAA00">Re</font></li>
+        <li itemscope itemtype="http://remakenow.us/title" itemprop="word"><font color="#00FF00">Make</font></li>
+        <li itemscope itemtype="http://remakenow.us/title" itemprop="word"><font color="#00FFFF">Now</font></li>
+       </a>
+      </font>
+     </ul>
+    </div>
+    <div align="center" itemscope itemtype="http://remakenow.us/selection" itemprop="menu">
+     <ul id="bl" itemscope itemtype="http://remakenow.us/menu" itemprop="item">
+      <font size="8">
+       <li itemscope itemtype="http://remakenow.us/item" itemprop="word"><a href="javascript:showApps();"><font color="#FF0000">Apps</font></a></li>
+       <li itemscope itemtype="http://remakenow.us/item" itemprop="word"><a href="javascript:showSupp();"><font color="#FF0000">Support</font></a></li>
+       <li itemscope itemtype="http://remakenow.us/item" itemprop="word"><a href="javascript:showNews();"><font color="#FF0000">Current</font></a></li>
+      </font>
+     </ul>
+    </div>
+   </div>
+   <div id="theBody" itemscope itemtype="http://remakenow.us/body" itemprop="page">
+   </div>
+   <script type="text/javascript">
+    var appBody = "<div>";appBody += "</div>";
+    var supBody = "<div>";supBody += "</div>";
+    var newBody = "<div>";newBody += "</div>";
+    function showApps(){ document.getElementbyId("theBody").innerHTML = appBody; }
+    function showSupp(){ document.getElementById("theBody").innerHTML = supBody; }
+    function showNews(){ document.getElementById("theBody").innerHTML = newBody; }
+   </script>
   </body>
  </html>
