@@ -22,40 +22,48 @@
    </script>
    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-app.js"></script>
    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-auth.js"></script>
-<meta name="google-site-verification" content="UbCVwyTJXxNUris4DfPRj5ojYEbN1Ih_6zVvFSxt9LQ" />   <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-database.js"></script><meta name="google-site-verification" content="UbCVwyTJXxNUris4DfPRj5ojYEbN1Ih_6zVvFSxt9LQ" />
+   <meta name="google-site-verification" content="UbCVwyTJXxNUris4DfPRj5ojYEbN1Ih_6zVvFSxt9LQ" />   <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-database.js"></script><meta name="google-site-verification" content="UbCVwyTJXxNUris4DfPRj5ojYEbN1Ih_6zVvFSxt9LQ" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-   <div itemscope itemtype="http://remakenow.us/head" itemprop="head">
-    <div align="center">
-     <ul id="il" itemscope itemtype="http://remakenow.us/logo" itemprop="title">
-      <font size="12">
-       <a href="javascript:reload();">
-        <li itemscope itemtype="http://remakenow.us/title" itemprop="word"><font color="#FFAA00">Re</font></li>
-        <li itemscope itemtype="http://remakenow.us/title" itemprop="word"><font color="#00FF00">Make</font></li>
-        <li itemscope itemtype="http://remakenow.us/title" itemprop="word"><font color="#00FFFF">Now</font></li>
-       </a>
-      </font>
-     </ul>
+   <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainMenu">
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+      </button>
+      <a href="javascript:reload()" class="navbar-brand" href="#"><font size="12"><font color="#00FFFF" itemscope itemtype="http://remakenow.us/title" itemprop="word">Re</font><font color="#FFAA00" itemscope itemtype="http://remakenow.us/title" itemprop="word">Make</font><font color="#00FF00" itemscope itemtype="http://remakenow.us/title" itemporp="word">Now</font></font></a>
+     </div>
+     <div class="collapse navbar-collapse" id="mainMenu">
+      <div class="nav navbar-nav">
+       <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href=""><font color="#00FFFF">Sub-parts</font></a>
+        <ul class="dropdown-menu">
+         <li><a href="javascript:sStores()" itemscope itemtype="http://remakenow.us/keyword" itemprop="word">Shop</a></li>
+         <li><a href="javascript:sDevelopers()" itemscope itemtype="http://remakenow.us/keyword" itemprop="word">Developers</a></li>
+         <li><a href="javascript:sFinance()" itemscope itemtype="http://remakneow.us/keyword" itemprop="word">Finance</a></li>
+         <li><a href="javascript:sNonProfit()" itemscope itemtype="http://remakenow.us/keyword" itemprop="word">Non-Profit</a></li>
+        </ul>
+       </li>
+      </div>
+     </div>
     </div>
-    <div align="center" itemscope itemtype="http://remakenow.us/selection" itemprop="menu">
-     <ul id="il" itemscope itemtype="http://remakenow.us/menu" itemprop="item">
-      <p>
-       <li itemscope itemtype="http://remakenow.us/item" itemprop="word"><a href="javascript:showApps()"><font color="#FF0000">Apps</font></a></li>
-       <li itemscope itemtype="http://remakenow.us/item" itemprop="word"><a href="javascript:showSupp()"><font color="#FF0000">Support</font></a></li>
-       <li itemscope itemtype="http://remakenow.us/item" itemprop="word"><a href="javascript:showNews()"><font color="#FF0000">Current</font></a></li>
-      </p>
-     </ul>
-    </div>
-   </div>
-   <div id="theBody" itemscope itemtype="http://remakenow.us/body" itemprop="page">
-   </div>
+   </nav>
+   <div id="theBody"></div>
    <script type="text/javascript">
-    var appBody = "<div>";appBody += "<div align='center'>";appBody += "</div>";appBody += "</div>";
-    var supBody = "<div>";supBody += "<div align='center'>";appBody += "</div>";supBody += "</div>";
-    var newBody = "<div>";newBody += "<div align='center'>";appBody += "</div>";newBody += "</div>";
-    function showApps(){ document.getElementById("theBody").innerHTML = appBody; }
-    function showSupp(){ document.getElementById("theBody").innerHTML = supBody; }
-    function showNews(){ document.getElementById("theBody").innerHTML = newBody; }
+    var sb1 = "<div>";sb1 += "<div align='center'>";sb1 += "<font color='#FFAA00'>Shop</font><br />";sb1 += "</div>";sb1 += "</div>";
+    var sb2 = "<div>";sb2 += "<div align='center'>";sb2 += "<font color='#FFAA00'>Developers</font><br />";sb2 += "</div>";sb2 += "</div>";
+    var sb3 = "<div>";sb3 += "<div align='center'>";sb3 += "<font color='#FFAA00'>Finance</font><br />";sb3 += "</div>";sb3 += "</div>";
+    var sb4 = "<div>";sb4 += "<div align='center'>";sb4 += "<font color='#FFAA00'>Non-Profit</font><br />";sb4 += "</div>";sb4 += "</div>";
+    function reload(){ window.location="http://www.remakenow.us/"; }
+    function sStores(){ document.getElementById("theBody").innerHTML = sb1; }
+    function sDevelopers(){ document.getElementById("theBody").innerHTML = sb2; }
+    function sFinance(){ document.getElementById("theBody").innerHTML = sb3; }
+    function sNonProfit(){ document.getElementById("theBody").innerHTML = sb4; }
    </script>
   </body>
  </html>
