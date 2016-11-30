@@ -5,10 +5,12 @@
   </head>
   <body onload="checkwindow()">
    <noscript>Sorry you won-t be able to SignUp, or LogIn without javascript</noscript>
+   <div id="test"></div>
    <script type="text/javascript">
     var win = window.location;
     var res = win.replace("http://www.remakenow.us/route/index.html?", "");
-    function checkwindow(){
+    document.getElementById("test").innerHTML = res;
+    function checkwindo(){
      if(res=="su"){ signup(); }
      if(res=="li"){ login(); }
     }
