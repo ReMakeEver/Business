@@ -49,6 +49,19 @@
     </div>
    </nav>
    <div align="center"><font size="12" color="#FFAA00">SignUp</font></div>
+   <ul id="bl">
+    <input type="text" value="User Name" onfocus="value=''" id="in1">
+    <input type="text" value="Password" onfocus="value=''" id="in2">
+    <input type="text" value="Phone Number" onfocue="value=''" id="in3">
+    <input type="button" value="Register Now!" onclick="checkValid()">
+   </ul>
+   <script type="text/javascript">
+    var i1 = document.getElementById("in1").value;var i2 = document.getElementById("in2").value;var i3 = document.getElementById("in3").value;
+    var users = new Array();
+    function checkValid(){
+     if(i1.match(/[0-9]/g)==true){window.alert("No Numbers");}
+    }
+   </script>
    <div align="right">
     <ul id="il" itemscope itemtype="http://remakenow.us/paragraph" itemprop="sentence">
      <li itemscope itemtype="http://remakenow.us/keyword" itemprop="word">ReMakeNow</li><li itemscope itemtype="http://remakenow.us/keyword" itemprop="word">is</li><li itemscope itemtype="http://remakenow.us/keyword" itemprop="word">not</li><li itemscope itemtype="http://remakenow.us/keyword" itemprop="word">apart</li><li itemscope itemtype="http://remakenow.us/keyword" itemprop="word">of</li><li itemscope itemtype="http://remakenow.us/keyword" itemprop="word">any</li><li itemscope itemtype="http://remakenow.us/keyword" itemprop="word">other</li><li itemscope itemtype="http://remakenow.us/keyword" itemprop="word">company</li><li itemscope itemtype="http://remakenow.us/keyword" itemprop="word">except</li><li itemscope itemtype="http://remakenow.us/keyword" itemprop="word">ReMakeEver</li><li>.</li>
