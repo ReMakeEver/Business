@@ -71,7 +71,8 @@
     var users = new Array();
     var phones = new Array();
     function checkValid(){
-     if(i1.value.match(/[0-9]/g)){error = "error";errorMsg += "UserName: cannot contain numbers";}
+     if(i1.value.match(/[0-9]/g)){error = "error";errorMsg += "UserName: cannot contain numbers";}else{for(var i = 0;i<users.length;i++){if(i1.value==users[i]){error = "error";errorMsg += "UserName: is already taken";}else{setUser();}}}
+     
      if(error=="error"){window.alert(errorMsg);}
     }
    </script>
