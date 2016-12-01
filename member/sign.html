@@ -62,7 +62,7 @@
     <font size="12">SignUp</font>
     <input type="text" value="UserName" onfocus="value=''" id="in1">
     <input type="text" value="Password" onfocus="value=''" id="in2">
-    <input type="text" value="Phone Number" onfoucs="value=''" id="in3">
+    <input type="text" value="E-Mail" onfoucs="value=''" id="in3">
     <input type="button" value="Register Now!" onclick="checkValid()">
    </div>
    <script type="text/javascript">
@@ -71,9 +71,10 @@
     var users = new Array();
     var phones = new Array();
     function checkValid(){
-     if(i1.value.match(/[0-9]/g)){error = "error";errorMsg += "UserName: cannot contain numbers";}else{for(var i = 0;i<users.length;i++){if(i1.value==users[i]){error = "error";errorMsg += "UserName: is already taken";}else{setUser();}}}
-     
-     if(error=="error"){window.alert(errorMsg);}
+     if(i1.value.match(/[0-9]/g)){error = "error";errorMsg += "UserName: cannot contain numbers & ";}else{for(var i = 0;i<users.length;i++){if(i1.value==users[i]){error = "error";errorMsg += "UserName: is already taken";}else{setUser();}}}
+     if(i2.value==/[a-zA-Z]/g){error = "error";errorMsg += "Password: cannot have capital numbers, and needs number & ";}else{if(9i2.value==/[a-z0-9]/g){setPass();}}
+     if(i3.value==undefined||i3.value==null){error = "errorP";errorMst += "Without e-mail you can't recover the account, but you can add one later";}
+     if(error=="error"){window.alert(errorMsg);}else{if(error=="errorP"){writeUser();}else{if(error=="none"){writeUser();}}}
     }
    </script>
    <div align="right">
