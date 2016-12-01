@@ -1,24 +1,32 @@
 <!DOCTYPE html>
  <html>
   <head>
-   <title>ReMakeNow | SignUp</title>
+   <title>ReMakeNow</title>
    <script type="application/ld+json">
     {
      "@context": "http://schema.org",
-     "@type": "Accounting Sub-division",
-     "@url": "http://www.remakenow.us/memeber/sign.html"
+     "@type": "Business Orginization",
+     "@url": "http://www.remakenow.us"
     }
    </script>
+   <style>
+    body{ font-family:Helvetica; }
+    ul#il li{ display:inline; }ul#bl li{ display:block; }
+    a{ text-decoration:none; }
+    font#detail p{display:inline; }
+   </style>
    <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
-   <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-app.js"></script>
-   <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-auth.js"></script>
    <script>
-    var config = { apiKey: "AIzaSyARjRu2rWLV8h8hh3_XCCAjhvSkx0umGIA", authDomain: "remakenow-9726a.firebaseapp.com", databaseUrl: "http://remakenow-9726a.firebaseapp.com", storageBucket: "remakenow-9726a.appspot.com" }
-    firbase.initializeApp(config);
+    var config = { apiKey:  "AIzaSyARjRu2rWLV8h8hh3_XCCAjhvSkx0umGIA", authDomain: "remakenow-9726a.firebaseapp.com", databaseUrl: "https://remakenow-9726a.firebaseio.com", storageBucket: "remakenow-9726a.appspot.com" }
+    firebase.initializeApp(config);
    </script>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/boostrap.min.css">
+   <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-database.js"></script>
+   <meta name="google-site-verification" content="UbCVwyTJXxNUris4DfPRj5ojYEbN1Ih_6zVvFSxt9LQ" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstarp.cdn/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
    <nav class="navbar navbar-default navbar-fixed-top">
@@ -29,37 +37,42 @@
        <span class="icon-bar"></span>
        <span class="icon-bar"></span>
       </button>
-      <a href="http://www.remakenow.us" class="navbar-brand"><font size="12"><font color="#00FFFF" itemscope itemtype="http://remakenow.us/title" itemprop="word">Re</font><font color="#FFAA00" itemscope itemtype="http://remakenow.us/title" itemprop="word">Make</font><font color="#00FF00" itemscope itemtype="http://remakenow.us/title" itemprop="word">Now</font></font></a>
+      <a href="http://www.remakenow.us/" class="navbar-brand"><font size="12"><font color="#00FFFF" itemscope itemtype="http://remakenow.us/title" itemprop="word">Re</font><font color="#FFAA00" itemscope itemtype="http://remakenow.us/title" itemprop="word">Make</font><font color="#00FF00" itemscope itemtype="http://remakenow.us/title" itemporp="word">Now</font></font></a>
      </div>
      <div class="collapse navbar-collapse" id="mainMenu">
-      <li class="dropdown">
-       <a class="dropdown-toggle" data-toggle="dropdown"  href=""><font color="#00FF00">Sub-parts</font></a>
-       <ul class="dropdown-menu">
-        <li><a href="http://www.remakenow.us/s/" itemscope itemtype="http://remakenow.us/keyword" itemprop="word">Shop</a></li>
-        <li><a href="http://www.remakenow.us/d/" itemscope itemtype="http://remakenow.us/keyword" itemprop="word">Developers</a></li>
-        <li><a href="http://www.remakenow.us/f/" itemscope itemtype="http://remakenow.us/keyword" itemprop="word">Finance</a></li>
-        <li><a href="http://www.remakenow.us/np/" itemscope itemtype="http://remakenow.us/keyword" itemprop="word">Non-Profit</a></li>
+      <div class="nav navbar-nav">
+       <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href=""><font color="#00FFFF">Sub-parts</font></a>
+        <ul class="dropdown-menu">
+         <li><a href="http://www.remakenow.us/s/" itemscope itemtype="http://remakenow.us/keyword" itemprop="word">Shop</a></li>
+         <li><a href="http://www.remakenow.us/d/" itemscope itemtype="http://remakenow.us/keyword" itemprop="word">Developers</a></li>
+         <li><a href="http://www.remakenow.us/f/" itemscope itemtype="http://remakneow.us/keyword" itemprop="word">Finance</a></li>
+         <li><a href="http://www.remakenow.us/np/" itemscope itemtype="http://remakenow.us/keyword" itemprop="word">Non-Profit</a></li>
+        </ul>
+       </li>
+       <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.remakenow.us/route/index.html?state=su"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="http://www.remakenow.us/route/index.html?state=li"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
        </ul>
-      </li>
+      </div>
      </div>
-     <ul class="nav navbar-nav navbar-right">
-      <li><a href="http://www.remakenow.us/route/index.html?su"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="http://www.remakenow.us/route/index.html?li"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
-     </ul>
     </div>
    </nav>
-   <div align="center"><font size="12" color="#FFAA00">SignUp</font></div>
-   <ul id="bl">
-    <input type="text" value="User Name" onfocus="value=''" id="in1">
+   <div align="center">
+    <font size="12">SignUp</font>
+    <input type="text" value="UserName" onfocus="value=''" id="in1">
     <input type="text" value="Password" onfocus="value=''" id="in2">
-    <input type="text" value="Phone Number" onfocue="value=''" id="in3">
+    <input type="text" value="Phone Number" onfoucs="value=''" id="in3">
     <input type="button" value="Register Now!" onclick="checkValid()">
-   </ul>
+   </div>
    <script type="text/javascript">
-    var i1 = document.getElementById("in1").value;var i2 = document.getElementById("in2").value;var i3 = document.getElementById("in3").value;
+    var i1 = document.getElementById("in1");var i2 = document.getElementById("in2");var i3 = document.getElementById("in3");
+    var error = "none";var errorMsg = "";
     var users = new Array();
+    var phones = new Array();
     function checkValid(){
-     if(i1.match(/[0-9]/g)==true){window.alert("No Numbers");}
+     if(i1.value.match(/[0-9]/g)){error = "error";errorMsg += "UserName: cannot contain numbers";}
+     if(error=="error"){window.alert(errorMsg);}
     }
    </script>
    <div align="right">
