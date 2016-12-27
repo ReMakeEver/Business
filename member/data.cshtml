@@ -1,0 +1,24 @@
+@{
+var db = Database.Open("ReMakeNow"); 
+var selectQueryString = "SELECT *Members"; 
+}
+<html> 
+<body>
+<h1>ReMakeNow</h1> 
+<table> 
+<tr>
+<th>Id</th> 
+<th>Name</th> 
+<th>Password</th> 
+</tr>
+@foreach(var row in db.Query(selectQueryString))
+{
+<tr> 
+<td>@row.Id</td> 
+<td>@row.Name</td> 
+<td>@row.Password</td> 
+</tr> 
+}
+</table> 
+</body> 
+</html>
