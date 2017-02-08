@@ -24,7 +24,7 @@ function getLTCPrice(id){
  xml.onreadystatechange = function(){
   if(this.readyState == 4 && this.status == 200){
    var price = JSON.parse(this.responseText);
-   document.getElementByid(id).innerHTML = price.ticker.price;
+   document.getElementById(id).innerHTML = price.ticker.price;
   }
  };
  xml.open("GET", "https://api.cryptonator.com/api/ticker/ltc-usd", true);
