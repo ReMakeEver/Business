@@ -1,4 +1,0 @@
-A website is a set of files that is set on a computer that the public can access.
-Most websites are made with HTML, JavaScript and PHP.
-To make a website successfull one must index their webpage with a search engine.
-Web pages are used for online stores, social media, financing and sharing information.
